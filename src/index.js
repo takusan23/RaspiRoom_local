@@ -27,7 +27,7 @@ const irCallback = (device, isOn) => {
             break
         case 'light':
             // テレビ？
-            let light = ison ? "tv_on" : 'tv_off'
+            let light = isOn ? "tv_on" : 'tv_off'
             const run = exec(`cd ~ && python3 irrp.py -p -g17 -f codes ${light}`)
             break
     }
@@ -51,6 +51,7 @@ const postData = () => {
     })
 }
 
+postData()
 
 /** センサーの値をセットする */
 const setSensorValue = (temp, humid, cpu) => {
