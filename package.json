@@ -1,0 +1,12 @@
+{
+  "name": "raspiroom_local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "takusan_23",
+  "license": "LGPL-3.0"
+}
